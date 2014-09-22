@@ -112,6 +112,41 @@ a:hover                        { text-decoration:none; }
     .main-content {
 
     }
+        .list-goods {
+            overflow: hidden;
+        }
+            .list-goods li {
+                float: left;
+                width: 290px;
+                height: 420px;
+                margin-left: 68px;
+                background: url("../images/content/bg_goods.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .list-goods li:first-child {
+                margin-left: 0;
+            }
+                .box-foto-goods {
+                    position: relative;
+                    height: 185px;
+                    text-align: center;
+                }
+                    .foto-goods-size1,
+                    .foto-goods-size2 {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        width: 185px;
+                        height: 150px;
+                    }
+                    .foto-goods-size2 {
+                        width: 192px;
+                        height: 158px;
+                    }
+
+            .header-goods {
+                text-align: center;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
