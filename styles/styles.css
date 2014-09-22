@@ -61,6 +61,16 @@ a:hover                        { text-decoration:none; }
         color: #624f2e;
     }
         .phone {
+            position: relative;
+            z-index: 2;
+            float: right;
+            margin-top: 5px;
+            font: 700 13px 'PT Sans', sans-serif;
+        }
+        .phone:before {
+            content: "";
+            position: relative;
+            z-index: 2;
             float: right;
             margin-top: 5px;
             font: 700 13px 'PT Sans', sans-serif;
@@ -68,8 +78,12 @@ a:hover                        { text-decoration:none; }
             .phone span {
                 font-size: 27px;
             }
-        h1 {
+        h1.logo {
+            position: relative;
+            left: 12%;
             background: rgba(255, 249, 238, 0.5);
+            box-shadow: -1020px 0 0 rgba(255, 249, 238, 0.5), 1020px 0 0 rgba(255, 249, 238, 0.5);
+            word-spacing: 100px;
         }
             h1.logo a {
                 text-decoration: none;
