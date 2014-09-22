@@ -2,7 +2,7 @@
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
 html,body                       { width:100%; height:100%; }
-body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+body                            { padding:0; margin:0; font:48px 'Rosamunda Two', sans-serif; background:#FFFFFF; color:#484848; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,input,textarea {
 	padding:0;
 	margin:0;
@@ -37,17 +37,50 @@ a:hover                        { text-decoration:none; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
 .clearfix                      { display: inline-block; }
-/*----------------------------------------------------------------------------------*/
-/*-------------------------------------WRAPPER--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
 
+@font-face {
+    font-family: 'Rosamunda Two';
+    src: url('../fonts/rosamunda_two.eot');
+    src: url('../fonts/rosamunda_two.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/rosamunda_two.woff2') format('woff2'),
+    url('../fonts/rosamunda_two.woff') format('woff'),
+    url('../fonts/rosamunda_two.ttf') format('truetype'),
+    url('../fonts/rosamunda_two.svg#rosamunda_tworegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------HEADER---------------------------------------*/
+/*-----------------------------------HEADER-WRAP------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------*/
+#header-wrap {
+    position: relative;
+}
+    #header {
+        width: 1024px;
+        margin: 0 auto;
+        color: #624f2e;
+    }
+        .phone {
+            float: right;
+            margin-top: 5px;
+            font: 700 13px 'PT Sans', sans-serif;
+        }
+            .phone span {
+                font-size: 27px;
+            }
+        h1 {
+            background: rgba(255, 249, 238, 0.5);
+        }
+            h1.logo a {
+                text-decoration: none;
+                font: 128px 'Rosamunda Two', sans-serif;
+                color: #624f2e;
+            }
+            h1.logo a:hover {
+                text-decoration: none;
+            }
 /*-------------------------------------NAV------------------------------------------*/
-/*----------------------------------------------------------------------------------*/
+
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
