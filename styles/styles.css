@@ -15,7 +15,7 @@ textarea                       { vertical-align:top; }
 input[type=submit]             { cursor:pointer; }
 img, fieldset                  { border:0; }
 table                          { border-collapse:collapse; border-spacing:0; }
-a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:link, a:visited              { font:12px 'Rosamunda Two', sans-serif; color:#484848; text-decoration:underline; }
 a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------DEFAULT CLASSES------------------------------*/
@@ -36,7 +36,7 @@ a:hover                        { text-decoration:none; }
 .align-c                       { text-align:center !important; }
 .clear                         { clear:both; }
 .clearfix:after                { content: ""; display: block; clear: both; visibility: hidden;}
-.clearfix                      { display: inline-block; }
+.clearfix                      { display: inline-block; width: 100%; }
 
 @font-face {
     font-family: 'Rosamunda Two';
@@ -56,7 +56,9 @@ a:hover                        { text-decoration:none; }
     position: relative;
 }
     .header,
-    .main-content {
+    .main-content,
+    .footer {
+        overflow: hidden;
         position: relative;
         z-index: 1;
         width: 1024px;
@@ -247,13 +249,15 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .wrap-content {
     padding-top: 10px;
-    background: url("../images/bg_goods.jpg") repeat-x;
+    background: url("../images/bg_content.jpg") 0 535px repeat-x,
+                url("../images/bg_goods.jpg") repeat-x;
 }
     .main-content {
 
     }
         .list-goods {
             overflow: hidden;
+            margin-bottom: 45px;
         }
             .list-goods li {
                 float: left;
@@ -294,3 +298,121 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+.wrap-footer {
+    padding-bottom: 30px;
+    background: #A28778;
+}
+    .footer {
+        color: #5a5a5a;
+    }
+        .list-soc-links {
+            margin-top: 10px;
+        }
+            .list-soc-links li {
+                float: left;
+                margin-right: 33px;
+            }
+                .list-soc-links a {
+                    display: block;
+                }
+                .list-soc-links a:hover {
+                    opacity: 0.8;
+                }
+                    .soc-vk i {
+                        padding: 12px 12px 13px 11px;
+                        background: #6996C7;
+                    }
+                    .soc-tw i {
+                        padding: 16px 14px 10px;
+                        background: #28C3FF;
+                    }
+                    .soc-fb i {
+                        padding: 15px 18px 11px;
+                        background: #496194;
+                    }
+                    .soc-od a {
+                        padding: 17px 24px 18px 25px;
+                        background: url("../images/footer/icon_odnoklassniki.png") 18px 15px no-repeat #FF9C43;
+                        background-size: 25%;
+                        text-indent: -9999px;
+                    }
+                    .soc-gg i {
+                        padding: 16px 16px 15px;
+                        background: #FF6D4A;
+                    }
+                        .list-soc-links i:before {
+                            color: #fff;
+                        }
+                        .soc-vk i:before {
+                            font-size: 24px;
+                        }
+                        .soc-fb i:before,
+                        .soc-tw i:before {
+                            font-size: 23px;
+                        }
+                        .soc-gg i:before {
+                            font-size: 18px;
+                        }
+
+        a.logo-footer {
+            float: left;
+            width: 116px;
+            height: 116px;
+            margin-right: 10px;
+            background: #fff;
+            border: 2px solid #765B4D;
+            font-size: 35px;
+            line-height: 0.6;
+            text-decoration: none;
+
+            -webkit-border-radius: 60px;
+            -moz-border-radius: 60px;
+            border-radius: 60px;
+        }
+            .logo-footer > span {
+                display: block;
+                margin-top: 35px;
+                margin-left: 6px;
+            }
+                .logo-footer > span span {
+                    display: block;
+                    margin-left: 10px;
+                }
+
+        .box-contact {
+            overflow: hidden;
+            font-family: 'PT Sans', sans-serif;
+        }
+            .fa-phone-footer {
+                float: left;
+                width: 34px;
+                height: 34px;
+                margin-right: 15px;
+                border: 2px solid #5a5a5a;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+            }
+                .fa-phone-footer:before {
+                    display: block;
+                    margin-top: 3px;
+                    font-size: 24px;
+                }
+            .phone-footer {
+                float: left;
+                font-size: 32px;
+            }
+            .address {
+                display: inline-block;
+                font-size: 18px;
+                font-style: italic;
+            }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------OTHER----------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.p-left5 {
+    padding-left: 5px;
+}
+.p-left12 {
+    padding-left: 12px;
+}
