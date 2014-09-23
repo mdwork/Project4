@@ -232,9 +232,7 @@ a:hover                        { text-decoration:none; }
         background: url("../images/slider/slider_arrows.png") no-repeat scroll -46px 0 transparent;
         cursor: pointer;
     }
-/*----------------------------------------------------------------------------------*/
 /*-------------------------------------CATALOG--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
 .catalog {
     position: absolute;
     bottom: 0;
@@ -249,13 +247,16 @@ a:hover                        { text-decoration:none; }
         width: 142px;
         height: 140px;
         background-color: #F1EDEA;
-        border-radius: 70px;
+        -webkit-border-radius: 71px;
+        -moz-border-radius: 71px;
+        border-radius: 71px;
         border: 1px solid #2B221D;
     }
         .catalog a {
+            display: inline-block;
             text-transform: uppercase;
             text-decoration: none;
-            font: 400 19px Arial, sans-serif;
+            font: 400 20px "PT Sans", sans-serif;
             color: #5a5a5a;
         }
         .catalog a:hover {
