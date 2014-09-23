@@ -49,6 +49,18 @@ a:hover                        { text-decoration:none; }
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-thin.eot');
+    src: url('../fonts/helveticaneuecyr-thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/helveticaneuecyr-thin.woff2') format('woff2'),
+        url('../fonts/helveticaneuecyr-thin.woff') format('woff'),
+        url('../fonts/helveticaneuecyr-thin.ttf') format('truetype'),
+        url('../fonts/helveticaneuecyr-thin.svg#helveticaneuecyrthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /*----------------------------------------------------------------------------------*/
 /*-----------------------------------HEADER-WRAP------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -74,6 +86,7 @@ a:hover                        { text-decoration:none; }
             position: relative;
             width: 1024px;
             margin: 0 auto;
+            padding-bottom: 10px;
             color: #624f2e;
         }
         .header-nav,
@@ -237,8 +250,8 @@ a:hover                        { text-decoration:none; }
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 167px;
-    padding-top: 25px;
+    height: 140px;
+    padding: 26px 0;
     background: url("../images/header/bg_catalog.png") repeat-x;
     text-align: center;
 }
@@ -252,11 +265,22 @@ a:hover                        { text-decoration:none; }
         border-radius: 71px;
         border: 1px solid #2B221D;
     }
+        .box-catalog {
+            position: relative;
+            display: block;
+            height: 88px;
+        }
+            .box-catalog img {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+            }
         .catalog a {
-            display: inline-block;
+            display: block;
+            margin-top: 5px;
             text-transform: uppercase;
             text-decoration: none;
-            font: 400 20px "PT Sans", sans-serif;
+            font: 400 18px 'Helvetica Neue', sans-serif;
             color: #5a5a5a;
         }
         .catalog a:hover {
@@ -365,7 +389,7 @@ a:hover                        { text-decoration:none; }
                 bottom: 15px;
                 width: 100%;
                 margin-left: 20px;
-                border-bottom: 1px solid #fff;
+                border-bottom: 1px solid #C7BFB8;
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
@@ -384,7 +408,7 @@ a:hover                        { text-decoration:none; }
     }
         .top-footer {
             overflow: hidden;
-            margin-bottom: 50px;
+            margin: 6px 0 30px;
         }
             .list-soc-links {
                 margin-top: 10px;
