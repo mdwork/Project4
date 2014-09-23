@@ -1,12 +1,13 @@
 (function($){
     function positionFotoGoods(foto) {
-        var widthFoto = foto.width() / 1.5,
-            heightFoto = foto.height() / 1.5;
-
-        foto.width(widthFoto).height(heightFoto);
-        foto.css('marginLeft', -widthFoto / 2);
+        for(var i = 0; i < foto.length; i++) {
+            $(foto[i]).width($(foto[i]).width() / 1.5).height($(foto[i]).height());
+            $(foto[i]).css('marginLeft', -$(foto[i]).width() / 2);
+        }
     }
-    var fotoGoods1 = $('.foto-goods-size1');
+    var fotoGoods = $('.foto-goods-size1'),
+        fotoNav = $('.box-catalog img');
 
-    positionFotoGoods(fotoGoods1);
+    positionFotoGoods(fotoGoods);
+    positionFotoGoods(fotoNav);
 })(jQuery);
