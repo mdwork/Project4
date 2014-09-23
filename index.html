@@ -6,9 +6,11 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-    <script src="js/jQuery 1.11.0.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
     <script src="js/jflow.plus.js" type="text/javascript"></script>
-    <script language="javascript">
+
+    <script>
         $(document).ready(function(){
             $("#myController").jFlow({
                 controller: ".jFlowControl", // must be class, use . sign
@@ -17,13 +19,14 @@
                 selectedWrapper: "jFlowSelected",  // just pure text, no sign
                 width: "100%",  // this is the width for the content-slider
                 height: "800px",  // this is the height for the content-slider
-                duration: 400,  // time in miliseconds to transition one slide
+                duration: 500,  // time in miliseconds to transition one slide
                 prev: ".jFlowPrev", // must be class, use . sign
                 next: ".jFlowNext", // must be class, use . sign
                 auto: true
             });
         });
     </script>
+    <script type="text/javascript" src="js/mainJs.js"></script>
 </head>
 
 <body class="body-home">
@@ -113,52 +116,66 @@
 
         <ul class="catalog">
             <li>
-                <span class="box-catalog">
-                    <img src="images/header/pakhlava.png">
-                </span>
-                <a href="#">Пахлава</a>
+                <a href="#">
+                    <span class="box-catalog">
+                        <img src="images/header/pakhlava.png">
+                    </span>
+                    <span class="name-item-catalog">Пахлава</span>
+                </a>
             </li>
 
             <li>
-                <span class="box-catalog">
-                    <img src="images/header/nuts.png">
-                </span>
-                <a href="#">Орехи</a>
+                <a href="#">
+                    <span class="box-catalog">
+                        <img src="images/header/nuts.png">
+                    </span>
+                    <span class="name-item-catalog">Орехи</span>
+                </a>
             </li>
 
             <li>
-                <span class="box-catalog">
-                    <img src="images/header/lokum.png">
-                </span>
-                <a href="#">Лукум</a>
+                <a href="#">
+                    <span class="box-catalog">
+                        <img src="images/header/lokum.png">
+                    </span>
+                    <span class="name-item-catalog">Лукум</span>
+                </a>
             </li>
 
             <li>
-                <span class="box-catalog">
-                    <img src="images/header/halva.png">
-                </span>
-                <a href="#">Халва</a>
+                <a href="#">
+                    <span class="box-catalog">
+                        <img src="images/header/halva.png">
+                    </span>
+                    <span class="name-item-catalog">Халва</span>
+                </a>
             </li>
 
             <li>
-                <span class="box-catalog">
-                    <img src="images/header/dried_fruit.png">
-                </span>
-                <a href="#">Сухофрукты</a>
+                <a href="#">
+                    <span class="box-catalog">
+                        <img src="images/header/dried_fruit.png">
+                    </span>
+                    <span class="name-item-catalog">Сухофрукты</span>
+                </a>
             </li>
 
             <li>
-                <span class="box-catalog">
-                    <img src="images/header/chocolate.png">
-                </span>
-                <a href="#">Шоколад</a>
+                <a href="#">
+                    <span class="box-catalog">
+                        <img src="images/header/chocolate.png">
+                    </span>
+                    <span class="name-item-catalog">Шоколад</span>
+                </a>
             </li>
 
             <li>
-                <span class="box-catalog">
-                    <img src="images/header/coffee_tea.png">
-                </span>
-                <a href="#">Кофе и чай</a>
+                <a href="#">
+                    <span class="box-catalog">
+                        <img src="images/header/coffee_tea.png">
+                    </span>
+                    <span class="name-item-catalog">Кофе и чай</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -294,6 +311,5 @@
             </ul>
         </footer>
     </div><!--end WRAP-FOOTER-->
-    <script src="js/mainJs.js"></script>
 </body>
 </html>

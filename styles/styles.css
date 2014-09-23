@@ -265,27 +265,41 @@ a:hover                        { text-decoration:none; }
         border-radius: 71px;
         border: 1px solid #2B221D;
     }
-        .box-catalog {
-            position: relative;
+        .catalog li a {
+            overflow: hidden;
             display: block;
-            height: 88px;
+            height: 140px;
+            text-decoration: none;
+
+            -webkit-border-radius: 75px;
+            -moz-border-radius: 75px;
+            border-radius: 75px;
         }
-            .box-catalog img {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
+            .box-catalog {
+                position: relative;
+                display: block;
+                height: 88px;
+
+                -webkit-border-top-left-radius: 35px;
+                -webkit-border-top-right-radius: 35px;
+                -moz-border-radius-topleft: 35px;
+                -moz-border-radius-topright: 35px;
+                border-top-left-radius: 35px;
+                border-top-right-radius: 35px;
             }
-        .catalog a {
-            display: block;
-            margin-top: 5px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font: 400 18px 'Helvetica Neue', sans-serif;
-            color: #5a5a5a;
-        }
-        .catalog a:hover {
-            text-decoration: none;
-        }
+                .box-catalog img {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                }
+            .name-item-catalog {
+                display: block;
+                margin-top: 5px;
+                text-transform: uppercase;
+                text-decoration: none;
+                font: 400 18px 'Helvetica Neue', sans-serif;
+                color: #5a5a5a;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/

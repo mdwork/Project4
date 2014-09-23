@@ -1,4 +1,4 @@
-(function($){
+$(document).ready(function(){
     function positionFotoGoods(foto) {
         for(var i = 0; i < foto.length; i++) {
             var curForo = $(foto[i]),
@@ -15,4 +15,4 @@
 
     positionFotoGoods(fotoGoods);
     positionFotoGoods(fotoNav);
-})(jQuery);
+});
