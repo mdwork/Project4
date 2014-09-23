@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="js/jQuery 1.11.0.js"></script>
+    <script src="js/mainJs.js"></script>
     <script src="js/jflow.plus.js" type="text/javascript"></script>
     <script language="javascript">
         $(document).ready(function(){
@@ -27,58 +29,74 @@
 
 <body class="body-home">
     <div class="wrap-header">
-        <header class="header">
-            <div class="phone">
-                <i class="fa fa-phone"></i>
-                8(800)<span>123-45-67</span>
+        <div class="header-top">
+            <header class="header">
+                <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    8(800)<span>123-45-67</span>
+                </div>
+
+                <h1 class="logo"><a href="#">Дары Востока</a></h1>
+            </header>
+        </div>
+
+        <div class="nav-container">
+            <div class="header-nav">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">О магазине</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Корзина</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="work-schedule">
+                    <span>Пон.-пят. 8.00-18.30</span>
+                    <span>Суббота 9.00-15.00</span>
+                    <span>Воскресенье выходной</span>
+                </div>
             </div>
+        </div>
 
-            <h1 class="logo"><a href="#">Дары Востока</a></h1>
-
-            <nav class="nav">
-                <ul>
-                    <li>
-                        <a href="#">О магазине</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Каталог</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Оплата</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Корзина</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="work-schedule">
-                <span>Пон.-пят. 8.00-18.30</span>
-                <span>Суббота 9.00-15.00</span>
-                <span>Воскресенье выходной</span>
-            </div>
-
+        <div class="search-container">
             <form name="search_form" method="get">
                 <input type="text" placeholder="Поиск по сайту...">
                 <input type="submit" value="">
             </form>
-        </header>
-<!--
+        </div>
+
         <div id="container">
             <div id="mySlides">
                 <div id="slide1">
-                    <img src="images/slider/slide1.jpg" alt="Slide 1 jFlow Plus" />
+                    <img src="images/slider/slide1.jpg" alt="Slide 1 jFlow Plus">
                 </div>
 
                 <div id="slide2">
-                    <img src="images/slider/slide2.jpg" alt="Slide 2 jFlow Plus" />
+                    <img src="images/slider/slide2.jpg" alt="Slide 2 jFlow Plus">
+                </div>
+
+                <div id="slide3">
+                    <img src="images/slider/slide1.jpg" alt="Slide 3 jFlow Plus">
+                </div>
+
+                <div id="slide4">
+                    <img src="images/slider/slide2.jpg" alt="Slide 4 jFlow Plus">
                 </div>
             </div>
 
@@ -86,10 +104,11 @@
                 <span class="jFlowControl"></span>
                 <span class="jFlowControl"></span>
                 <span class="jFlowControl"></span>
+                <span class="jFlowControl"></span>
             </div>
 
-            <span class="jFlowPrev"><div></div></span>
-            <span class="jFlowNext"><div></div></span>
+            <span class="jFlowPrev"><span></span></span>
+            <span class="jFlowNext"><span></span></span>
         </div>
 
 <!--        <ul class="catalog">
@@ -267,7 +286,5 @@
             </ul>
         </footer>
     </div><!--end WRAP-FOOTER-->
-    <script src="js/jQuery 1.11.0.js"></script>
-    <script src="js/mainJs.js"></script>
 </body>
 </html>

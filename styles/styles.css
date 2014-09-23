@@ -54,61 +54,73 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 .wrap-header {
     position: relative;
+    height: 900px;
 }
-    .header,
-    .main-content,
-    .footer {
-        overflow: hidden;
+    .header-top {
+        position: relative;
+        z-index: 2;
+        height: 114px;
+        background-color: rgba(255, 249, 238, 0.7);
+    }
+    .nav-container {
         position: relative;
         z-index: 1;
-        width: 1024px;
-        margin: 0 auto;
-        color: #624f2e;
+        background-color: rgba(255, 249, 238, 0.85);
     }
-        .phone {
+        .header,
+        .main-content,
+        .footer {
+            overflow: hidden;
             position: relative;
-            z-index: 2;
-            float: right;
-            margin-top: 15px;
-            font: 700 13px 'PT Sans', sans-serif;
+            width: 1024px;
+            margin: 0 auto;
+            color: #624f2e;
         }
-            .fa-phone {
+        .header-nav,
+        .search-container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+            .phone {
                 position: relative;
-                top: 3px;
-                width: 28px;
-                height: 28px;
-                border: 1px solid #624f2e;
-                -webkit-border-radius: 15px;
-                -moz-border-radius: 15px;
-                border-radius: 15px;
-                font-size: 20px !important;
-                line-height: 30px !important;
-                text-align: center;
+                z-index: 10;
+                float: right;
+                margin-top: 15px;
+                font: 700 13px 'PT Sans', sans-serif;
             }
-            .phone span {
-                font-size: 27px;
+                .fa-phone {
+                    position: relative;
+                    top: 3px;
+                    width: 28px;
+                    height: 28px;
+                    border: 1px solid #624f2e;
+                    -webkit-border-radius: 15px;
+                    -moz-border-radius: 15px;
+                    border-radius: 15px;
+                    font-size: 20px !important;
+                    line-height: 30px !important;
+                    text-align: center;
+                }
+                .phone span {
+                    font-size: 27px;
+                }
+            .logo {
+                position: relative;
+                left: 12%;
+                margin-top: -10px;
+                word-spacing: 100px;
             }
-        .logo {
-            position: relative;
-            left: 12%;
-            margin-top: -10px;
-            background: rgba(255, 249, 238, 0.7);
-            box-shadow: -1020px 0 0 rgba(255, 249, 238, 0.7), 1020px 0 0 rgba(255, 249, 238, 0.7);
-            word-spacing: 100px;
-        }
-            .logo a {
-                text-decoration: none;
-                font: 128px 'Rosamunda Two', sans-serif;
-                color: #624f2e;
-            }
-            .logo a:hover {
-                text-decoration: none;
-            }
+                .logo a {
+                    text-decoration: none;
+                    font: 128px 'Rosamunda Two', sans-serif;
+                    color: #624f2e;
+                }
+                .logo a:hover {
+                    text-decoration: none;
+                }
 /*-------------------------------------NAV------------------------------------------*/
 .nav {
     float: left;
-    background: rgba(255, 249, 238, 0.9);
-    box-shadow: -885px 0 0 rgba(255, 249, 238, 0.9), 885px 0 0 rgba(255, 249, 238, 0.9);
 }
     .nav li {
         float: left;
@@ -124,126 +136,36 @@ a:hover                        { text-decoration:none; }
             color: #7a6746;
         }
 /*-----------------------------------SLIDER------------------------------------------*/
-#jFlowCredits {
-    text-align: center;
-    margin: 0 auto;
-    width: 800px;
-}
-
-#jFlowCredits h1 {
-    color: #666;
-    font-weight: normal;
-    font-size: 90px;
-    line-height: 1.1em;
-    text-shadow: 1px 1px 1px #FFF;
-    margin: 20px 0 0 0;
-}
-
-
-#jFlowCredits h1 span {
-    font-style: italic;
-    background-color: #CCC;
-    font-size: 40px;
-    color: #FFF;
-    text-shadow: 1px 1px 1px #999;
-
-}
-
-#jFlowCredits h2 {
-    margin: 0 0 30px 0;
-}
-
-#jFlowCredits h2 a {
-    color: #FFF;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #999;
-
-}
-
-#jFlowCredits h2 a:hover {
-    text-decoration: underline;
-    background-color: #CCC;
-    color: #FFF;
-}
-
-
 #container {
     position: absolute;
-    top: 86px;
+    top: 80px;
     width: 100%;
     height: 800px;
 }
-
-#slide1 img, #slide2 img {
-    width: 100%;
-    height: 800px;
-}
-
-#slide1 span, #slide2 span, #slide3 span {
-    background: url("../images/slider/contentBg.png") repeat top left transparent;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-}
-
-#slide1 h3, #slide2 h3, #slide3 h3 {
-    font-family: Georgia, serif;
-    color: #FFF;
-    font-size: 35px;
-    font-style: italic;
-    margin: 0 0 10px 0;
-}
-
-#slide1 p, #slide2 p, #slide3 p {
-    font-family: Georgia, serif;
-    color: #FFF;
-    margin: 0;
-}
-
-.jFlowSlideContainer a {
-    color: #F90;
-    text-decoration: none;
-    font-style: italic;
-}
-
-.jFlowSlideContainer a:hover {
-    text-decoration: none;
-    border-bottom: 1px dotted white;
-}
-
-.jFlowSlideContainer a:focus {
-    position: relative;
-    top: 1px;
-}
-
-.jFlowNext div {
-    background:url("../images/slider/arrows.png") no-repeat scroll 0 -35px transparent;
-    height:130px;
-    position:absolute;
-    top:110px;
-    right: -50px;
-    width:50px;
-    cursor:pointer;
-}
-
-.jFlowPrev div {
-    background:url("../images/slider/arrows.png") no-repeat scroll -84px -35px transparent;
-    height:130px;
-    position:absolute;
-    top:110px;
-    left: -50px;
-    width:50px;
-    cursor:pointer;
-}
-
-.jFlowPrev div:hover {
-    background-position: -84px -235px;
-}
-
-.jFlowNext div:hover {
-    background-position: 0px -235px;
-}
+        #mySlides > div img {
+            width: 100%;
+            height: 100%;
+        }
+    .jFlowPrev span {
+        position: absolute;
+        bottom: 372px;
+        left: 40px;
+        display: inline-block;
+        height: 130px;
+        width: 70px;
+        background: url("../images/slider/slider_arrows.png") no-repeat scroll 0 0 transparent;
+        cursor: pointer;
+    }
+    .jFlowNext span {
+        position: absolute;
+        bottom: 372px;
+        right: 40px;
+        display: inline-block;
+        height: 130px;
+        width: 70px;
+        background: url("../images/slider/slider_arrows.png") no-repeat scroll -70px 0 transparent;
+        cursor: pointer;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
