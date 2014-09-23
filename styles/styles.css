@@ -259,6 +259,10 @@ a:hover                        { text-decoration:none; }
         font-size: 50px;
         color: #5a5a5a;
     }
+    .big-text {
+        font-size: 32px;
+        color: #484848;
+    }
         .list-goods {
             overflow: hidden;
             margin-bottom: 45px;
