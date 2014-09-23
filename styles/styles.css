@@ -255,9 +255,14 @@ a:hover                        { text-decoration:none; }
     .main-content {
 
     }
+    .header-level-two {
+        font-size: 50px;
+        color: #5a5a5a;
+    }
         .list-goods {
             overflow: hidden;
             margin-bottom: 45px;
+            padding-bottom: 16px;
         }
             .list-goods li {
                 float: left;
@@ -289,7 +294,62 @@ a:hover                        { text-decoration:none; }
                     }
 
             .header-goods {
+                color: #5a5a5a;
                 text-align: center;
+            }
+            .price-goods {
+                display: block;
+                padding-right: 20px;
+                font: 34px arial;
+                color: #483b2f;
+                text-align: right;
+            }
+            .weight-goods {
+                position: relative;
+                display: block;
+                padding: 30px 0;
+                background: rgba(255, 255, 255, 0.1);
+                color: #93877c;
+                font: 30px arial;
+                text-align: center;
+            }
+            .weight-goods:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -5px;
+                left: 140px;
+                width: 12px;
+                height: 12px;
+                background: url("../images/content/icon_goods.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .bt-buy-goods {
+                padding: 6px 17px;
+                margin-left: 75px;
+                background: #fff;
+                border: 1px solid #626160;
+                border-top-color: #A9A298;
+                border-right-color: #8D8982;
+                font: 27px Arial;
+                color: #483b2f;
+                text-transform: uppercase;
+            }
+            .bt-buy-goods:hover {
+                cursor: pointer;
+            }
+
+        .header-with-line-right {
+            position: relative;
+        }
+            .header-with-line-right:after {
+                content: '';
+                float: right;
+                position: absolute;
+                bottom: 15px;
+                width: 100%;
+                margin-left: 20px;
+                border-bottom: 1px solid #fff;
             }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
@@ -305,54 +365,58 @@ a:hover                        { text-decoration:none; }
     .footer {
         color: #5a5a5a;
     }
-        .list-soc-links {
-            margin-top: 10px;
+        .top-footer {
+            overflow: hidden;
+            margin-bottom: 50px;
         }
-            .list-soc-links li {
-                float: left;
-                margin-right: 33px;
+            .list-soc-links {
+                margin-top: 10px;
             }
-                .list-soc-links a {
-                    display: block;
+                .list-soc-links li {
+                    float: left;
+                    margin-right: 33px;
                 }
-                .list-soc-links a:hover {
-                    opacity: 0.8;
-                }
-                    .soc-vk i {
-                        padding: 12px 12px 13px 11px;
-                        background: #6996C7;
+                    .list-soc-links a {
+                        display: block;
                     }
-                    .soc-tw i {
-                        padding: 16px 14px 10px;
-                        background: #28C3FF;
+                    .list-soc-links a:hover {
+                        opacity: 0.8;
                     }
-                    .soc-fb i {
-                        padding: 15px 18px 11px;
-                        background: #496194;
-                    }
-                    .soc-od a {
-                        padding: 17px 24px 18px 25px;
-                        background: url("../images/footer/icon_odnoklassniki.png") 18px 15px no-repeat #FF9C43;
-                        background-size: 25%;
-                        text-indent: -9999px;
-                    }
-                    .soc-gg i {
-                        padding: 16px 16px 15px;
-                        background: #FF6D4A;
-                    }
-                        .list-soc-links i:before {
-                            color: #fff;
+                        .soc-vk i {
+                            padding: 12px 12px 13px 11px;
+                            background: #6996C7;
                         }
-                        .soc-vk i:before {
-                            font-size: 24px;
+                        .soc-tw i {
+                            padding: 16px 14px 10px;
+                            background: #28C3FF;
                         }
-                        .soc-fb i:before,
-                        .soc-tw i:before {
-                            font-size: 23px;
+                        .soc-fb i {
+                            padding: 15px 18px 11px;
+                            background: #496194;
                         }
-                        .soc-gg i:before {
-                            font-size: 18px;
+                        .soc-od a {
+                            padding: 17px 24px 18px 25px;
+                            background: url("../images/footer/icon_odnoklassniki.png") 18px 15px no-repeat #FF9C43;
+                            background-size: 25%;
+                            text-indent: -9999px;
                         }
+                        .soc-gg i {
+                            padding: 16px 16px 15px;
+                            background: #FF6D4A;
+                        }
+                            .list-soc-links i:before {
+                                color: #fff;
+                            }
+                            .soc-vk i:before {
+                                font-size: 24px;
+                            }
+                            .soc-fb i:before,
+                            .soc-tw i:before {
+                                font-size: 23px;
+                            }
+                            .soc-gg i:before {
+                                font-size: 18px;
+                            }
 
         a.logo-footer {
             float: left;
@@ -380,7 +444,9 @@ a:hover                        { text-decoration:none; }
                 }
 
         .box-contact {
+            float: left;
             overflow: hidden;
+            margin-top: 15px;
             font-family: 'PT Sans', sans-serif;
         }
             .fa-phone-footer {
@@ -403,10 +469,29 @@ a:hover                        { text-decoration:none; }
                 font-size: 32px;
             }
             .address {
-                display: inline-block;
+                display: block;
+                margin-top: 20px;
                 font-size: 18px;
                 font-style: italic;
             }
+
+        .list-right-footer {
+            overflow: hidden;
+            float: right;
+            width: 350px;
+        }
+            .list-right-footer li {
+                float: left;
+                width: 175px;
+                font: 20px 'PT Sans', sans-serif;
+            }
+                .list-right-footer a {
+                    font: italic 20px 'PT Sans', sans-serif;
+                    text-decoration: none;
+                }
+                .list-right-footer a:hover {
+                    text-decoration: underline;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
