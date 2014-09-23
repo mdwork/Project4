@@ -419,6 +419,7 @@ a:hover                        { text-decoration:none; }
                 }
                     .list-soc-links a {
                         display: block;
+                        box-shadow: 1px 1px 6px;
                     }
                     .list-soc-links a:hover {
                         opacity: 0.8;
