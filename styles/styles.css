@@ -146,9 +146,9 @@ a:hover                        { text-decoration:none; }
         background-color: rgba(255, 249, 238, 0.75);
         border: 1px solid #B4AD9D;
         border-top: none;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        border-radius: 6px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
     }
         .search_form input[type="text"]{
             position: absolute;
