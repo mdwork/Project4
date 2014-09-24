@@ -13,8 +13,10 @@ $(document).ready(function(){
     }
 
     var fotoGoods = $('.foto-goods-size1'),
+        fotoGoods2 = $('.foto-goods-size2'),
         fotoNav = $('.box-catalog img');
 
     positionFotoGoods(fotoGoods);
+    positionFotoGoods(fotoGoods2);
     positionFotoGoods(fotoNav);
 });

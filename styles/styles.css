@@ -347,6 +347,10 @@ a:hover                        { text-decoration:none; }
                         bottom: 0;
                         left: 50%;
                     }
+                    .foto-goods-size2 {
+                        width: 289px;
+                        height: 240px;
+                    }
 
             .header-goods {
                 color: #5a5a5a;
