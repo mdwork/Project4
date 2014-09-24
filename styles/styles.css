@@ -271,7 +271,7 @@ a:hover                        { text-decoration:none; }
             text-decoration: none;
         }
         .catalog li a:hover {
-            background-color:  rgba(171, 148, 129, 0.6);
+            background-color: rgba(171, 148, 129, 0.6);
         }
             .box-catalog {
                 position: relative;
@@ -389,9 +389,15 @@ a:hover                        { text-decoration:none; }
                 font: 27px Arial;
                 color: #483b2f;
                 text-transform: uppercase;
+                transition-timing-function: linear;
+                -webkit-transition-duration: 0.2s;
+                -o-transition-duration: 0.2s;
+                -moz-transition-duration: 0.2s;
+                transition-duration: 0.2s;
             }
             .bt-buy-goods:hover {
                 cursor: pointer;
+                background-color: #EAEAEA;
             }
             .bt-buy-goods:active {
                 background-color: #DCD1C5;
@@ -506,8 +512,8 @@ a:hover                        { text-decoration:none; }
             float: left;
             width: 118px;
             height: 118px;
-            margin-right: 10px;
-            background: #D6BFAE;
+            margin-right: 12px;
+            background-color: #D6BFAE;
             border: 1px solid #664A3C;
             font-size: 35px;
             line-height: 0.6;
@@ -519,6 +525,14 @@ a:hover                        { text-decoration:none; }
             -moz-border-radius: 60px;
             border-radius: 60px;
             text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+            transition-timing-function: linear;
+            -webkit-transition-duration: 0.5s;
+            -o-transition-duration: 0.5s;
+            -moz-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        a.logo-footer:hover {
+            background-color: #FFF1E0;
         }
             .logo-footer > span {
                 display: block;
@@ -540,7 +554,7 @@ a:hover                        { text-decoration:none; }
                 float: left;
                 width: 34px;
                 height: 34px;
-                margin-right: 15px;
+                margin-right: 14px;
                 border: 2px solid #5a5a5a;
                 -webkit-border-radius: 20px;
                 -moz-border-radius: 20px;
@@ -557,9 +571,10 @@ a:hover                        { text-decoration:none; }
             }
             .address {
                 display: block;
-                margin-top: 20px;
-                font-size: 18px;
+                margin-top: 22px;
+                font-size: 20px;
                 font-style: italic;
+                text-align: center;
             }
 
         .list-right-footer {
