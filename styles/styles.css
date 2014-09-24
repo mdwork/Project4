@@ -269,6 +269,10 @@ a:hover                        { text-decoration:none; }
             border-radius: 71px;
             border: 1px solid #2B221D;
             text-decoration: none;
+            -webkit-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            transition-duration: 0.3s;
         }
         .catalog li a:hover {
             background-color:  rgba(171, 148, 129, 0.6);
@@ -394,7 +398,7 @@ a:hover                        { text-decoration:none; }
                 cursor: pointer;
             }
             .bt-buy-goods:active {
-                background-color: #DDDDDD;
+                background-color: #DCD1C5;
             }
 
         .header-with-line-right {
