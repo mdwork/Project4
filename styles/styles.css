@@ -257,23 +257,21 @@ a:hover                        { text-decoration:none; }
 }
     .catalog li {
         display: inline-table;
-        width: 142px;
-        height: 140px;
-        background-color: #F1EDEA;
-        -webkit-border-radius: 71px;
-        -moz-border-radius: 71px;
-        border-radius: 71px;
-        border: 1px solid #2B221D;
     }
         .catalog li a {
             overflow: hidden;
             display: block;
+            width: 142px;
             height: 140px;
+            background-color: rgba(255, 255, 255, 0.9);
+            -webkit-border-radius: 71px;
+            -moz-border-radius: 71px;
+            border-radius: 71px;
+            border: 1px solid #2B221D;
             text-decoration: none;
-
-            -webkit-border-radius: 75px;
-            -moz-border-radius: 75px;
-            border-radius: 75px;
+        }
+        .catalog li a:hover {
+            background-color:  rgba(171, 148, 129, 0.6);
         }
             .box-catalog {
                 position: relative;
@@ -307,6 +305,9 @@ a:hover                        { text-decoration:none; }
     padding-top: 10px;
     background: url("../images/bg_content.jpg") 0 535px repeat-x,
                 url("../images/bg_goods.jpg") repeat-x;
+}
+.body-home .wrap-content {
+    padding-bottom: 70px;
 }
     .main-content {
 
@@ -381,7 +382,7 @@ a:hover                        { text-decoration:none; }
             .bt-buy-goods {
                 padding: 6px 17px;
                 margin-left: 75px;
-                background: #fff;
+                background-color: #ffffff;
                 border: 1px solid #626160;
                 border-top-color: #A9A298;
                 border-right-color: #8D8982;
@@ -392,9 +393,13 @@ a:hover                        { text-decoration:none; }
             .bt-buy-goods:hover {
                 cursor: pointer;
             }
+            .bt-buy-goods:active {
+                background-color: #DDDDDD;
+            }
 
         .header-with-line-right {
             position: relative;
+            overflow: hidden;
         }
             .header-with-line-right:after {
                 content: '';
@@ -413,16 +418,20 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrap-footer {
-    padding-bottom: 30px;
+    position: relative;
+    padding-bottom: 20px;
     background: #A28778;
 }
-    .footer {
-        overflow: hidden;
-        color: #5a5a5a;
+    .body-home .wrap-top-footer {
+        position: absolute;
+        top: -100px;
+        width: 100%;
+        background: transparent;
     }
         .top-footer {
             overflow: hidden;
-            margin: 6px 0 30px;
+            width: 1024px;
+            margin: 20px auto 30px;
         }
             .list-soc-links {
                 margin-top: 10px;
@@ -433,61 +442,83 @@ a:hover                        { text-decoration:none; }
                 }
                     .list-soc-links a {
                         display: block;
-                        box-shadow: 1px 1px 6px;
-                    }
-                    .list-soc-links a:hover {
-                        opacity: 0.8;
+                        -webkit-box-shadow: 1px 1px 7px 0 rgba(50, 50, 50, 0.3);
+                        -moz-box-shadow: 1px 1px 7px 0 rgba(50, 50, 50, 0.3);
+                        box-shadow: 1px 1px 7px 0 rgba(50, 50, 50, 0.3);
                     }
                         .soc-vk i {
                             padding: 12px 12px 13px 11px;
-                            background: #6996C7;
+                            background-color: #6996C7;
+                        }
+                        .soc-vk a:hover i {
+                            background-color: rgba(105, 150, 199, 0.8);
                         }
                         .soc-tw i {
                             padding: 16px 14px 10px;
-                            background: #28C3FF;
+                            background-color: #28C3FF;
+                        }
+                        .soc-tw a:hover i {
+                            background-color: rgba(40, 195, 255, 0.8);
                         }
                         .soc-fb i {
                             padding: 15px 18px 11px;
-                            background: #496194;
+                            background-color: #496194;
+                        }
+                        .soc-fb a:hover i {
+                            background-color: rgba(73, 97, 148, 0.8);
                         }
                         .soc-od a {
                             padding: 17px 24px 18px 25px;
                             background: url("../images/footer/icon_odnoklassniki.png") 18px 15px no-repeat #FF9C43;
                             background-size: 25%;
-                            text-indent: -9999px;
+                            text-indent: -9999px;#CFCFCE
+                        }
+                        .soc-od a:hover {
+                            background-color: rgba(255, 156, 67, 0.8);
                         }
                         .soc-gg i {
                             padding: 16px 16px 15px;
-                            background: #FF6D4A;
+                            background-color: #FF6D4A;
                         }
-                            .list-soc-links i:before {
-                                color: #fff;
-                            }
-                            .soc-vk i:before {
-                                font-size: 24px;
-                            }
-                            .soc-fb i:before,
-                            .soc-tw i:before {
-                                font-size: 23px;
-                            }
-                            .soc-gg i:before {
-                                font-size: 18px;
-                            }
+                        .soc-gg a:hover i {
+                            background-color: rgba(255, 109, 74, 0.8);
+                        }
+                        .list-soc-links i:before {
+                            color: #fff;
+                        }
+                        .soc-vk i:before {
+                            font-size: 24px;
+                        }
+                        .soc-fb i:before,
+                        .soc-tw i:before {
+                            font-size: 23px;
+                        }
+                        .soc-gg i:before {
+                            font-size: 18px;
+                        }
 
+    .footer {
+        overflow: hidden;
+        padding-top: 20px;
+        color: #5a5a5a;
+    }
         a.logo-footer {
             float: left;
-            width: 116px;
-            height: 116px;
+            width: 118px;
+            height: 118px;
             margin-right: 10px;
-            background: #fff;
-            border: 2px solid #765B4D;
+            background: #D6BFAE;
+            border: 1px solid #664A3C;
             font-size: 35px;
             line-height: 0.6;
             text-decoration: none;
-
+            -webkit-box-shadow: inset 0 0 4px 0 rgba(50, 50, 50, 0.5);
+            -moz-box-shadow: inset 0 0 4px 0 rgba(50, 50, 50, 0.5);
+            box-shadow: inset 0 0 4px 0 rgba(50, 50, 50, 0.5);
             -webkit-border-radius: 60px;
             -moz-border-radius: 60px;
             border-radius: 60px;
+            text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
         }
             .logo-footer > span {
                 display: block;
