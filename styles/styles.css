@@ -523,6 +523,7 @@ a:hover                        { text-decoration:none; }
                 margin-right: 0;
             }
                 .goods-card .weight-price {
+                    overflow: hidden;
                     height: 76px;
                     width: 152px;
                     padding: 35px 0;
@@ -544,10 +545,9 @@ a:hover                        { text-decoration:none; }
                         font: 400 38px 'Arial', sans-serif;
                         color: #8f7b6a;
                     }
-                .goods-card a.buy {
-                    display: inline-block;
-                    height: 30px;
-                    width: 141px;
+                .goods-card .buy-goods input[type="button"] {
+                    height: 32px;
+                    width: 143px;
                     background-color: #E1CEBA;
                     border: 1px solid #8F7B6A;
                     -webkit-border-radius: 1px;
@@ -556,8 +556,19 @@ a:hover                        { text-decoration:none; }
                     text-transform: uppercase;
                     text-decoration: none;
                     font: 700 16px 'Arial', sans-serif;
-                    line-height: 30px;
+                    line-height: 32px;
+                    cursor: pointer;
                     color: #8f7b6a;
+                    -webkit-transition-duration: 0.2s;
+                    -o-transition-duration: 0.2s;
+                    -moz-transition-duration: 0.2s;
+                    transition-duration: 0.2s;
+                }
+                .goods-card .buy-goods input[type="button"]:hover {
+                    background-color: #ECD9C5;
+                }
+                .goods-card .buy-goods input[type="button"]:active {
+                    background-color: #F8E5D1;
                 }
         .goods-card p {
             line-height: 24px;
