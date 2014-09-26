@@ -101,6 +101,7 @@ a:hover                        { text-decoration:none; }
                 float: right;
                 margin-top: 15px;
                 font: 700 14px 'PT Sans', sans-serif;
+                color: #624F2E;
             }
                 .fa-phone {
                     position: relative;
@@ -329,6 +330,7 @@ a:hover                        { text-decoration:none; }
         color: #5a5a5a;
     }
     .big-text {
+        margin-bottom: 10px;
         font: 35px 'Rosamunda Two', sans-serif;
         color: #484848;
     }
@@ -624,7 +626,6 @@ a:hover                        { text-decoration:none; }
         }
 /*-----------------------------------PAGINATION-------------------------------------*/
     .pagination {
-        margin-top: -36px;
         margin-bottom: 22px;
         text-align: center;
     }
@@ -655,13 +656,151 @@ a:hover                        { text-decoration:none; }
             }
 /*--------------------------------------CART----------------------------------------*/
 .empty-cart {
-    display: none;
+    display: block;
     padding-bottom: 150px;
     line-height: 32px;
 }
+
 .cart-with-goods {
-    display: block;
+    display: none;
+    padding-top: 8px;
 }
+    .cart-with-goods header {
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        font: 300 33px 'Helvetica Neue', sans-serif;
+    }
+
+    .table-order {
+        margin-bottom: 52px;
+        text-align: center;
+        font-family: 'Helvetica Neue', sans-serif;
+        color: #616161;
+    }
+    .table-order td {
+        border: 1px solid #E8DACB;
+    }
+        .table-order tr:first-child {
+            height: 29px;
+            font-size: 20px;
+        }
+
+        .table-order .tr-goods {
+            height: 270px;
+            vertical-align: top;
+        }
+            .tr-goods td {
+                padding: 10px 2px;
+            }
+            .delete-goods {
+                width: 77px;
+            }
+                .delete-goods a {
+                    font-size: 34px;
+                    color: #ED6B6B;
+                }
+                .delete-goods a:active {
+                    color: #FD8080;
+                }
+            .td-img {
+                overflow: hidden;
+                width: 235px;
+                text-align: center;
+            }
+                .td-img img {
+                    margin-top: 10px;
+                }
+            .product-name h3 {
+                width: 226px;
+                padding: 3px 7px;
+                font-weight: 400;
+                font-size: 23px;
+                text-align: left;
+            }
+            .quantity-goods {
+                width: 130px;
+            }
+                .quantity-goods input[type="text"] {
+                    width: 115px;
+                    height: 31px;
+                    padding-right: 4px;
+                    margin-bottom: 2px;
+                    border: 1px solid #E8DACB;
+                    font: 400 23px 'Helvetica Neue', sans-serif;
+                    text-align: right;
+                    color: #616161;
+                }
+                .quantity-goods span {
+                    display: block;
+                    font-size: 19px;
+                }
+            .price,
+            .sum {
+                font-weight: 700;
+            }
+
+        .tr-total {
+            height: 66px;
+            background-color: #C2B1A0;
+        }
+            .tr-total td {
+                border-color: #C2B1A0;
+            }
+            .tr-total .total {
+                width: 270px;
+                padding-right: 20px;
+                text-align: right;
+                font: 400 26px 'Arial', sans-serif;
+            }
+
+    .table-request-form {
+        margin-bottom: 50px;
+        font: 400 25px 'Helvetica Neue', sans-serif;
+        color: #616161;
+    }
+    .table-request-form tr {
+        height: 46px;
+    }
+    .table-request-form td {
+        width: 711px;
+    }
+    .table-request-form th,
+    .table-request-form td {
+        border: 1px solid #C2B1A0;
+    }
+        .table-request-form th {
+            width: 260px;
+            padding: 0 5px 0 15px;
+            border-right: 2px solid #C7BFB8;
+            font-weight: 400;
+            text-align: left;
+        }
+            .table-request-form input {
+                height: 100%;
+                width: 681px;
+                padding: 0 15px;
+                border: none;
+                font: 400 23px 'Helvetica Neue', sans-serif;
+                color: #616161;
+            }
+            .table-request-form input[type="submit"] {
+                height: 41px;
+                width: auto;
+                min-width: 200px;
+                padding: 0 10px;
+                margin: 6px;
+                border: 1px solid #E8DACB;
+                -webkit-border-radius: 1px;
+                -moz-border-radius: 1px;
+                border-radius: 1px;
+                background-color: transparent;
+                text-transform: uppercase;
+                font: 400 24px 'Arial', sans-serif;
+                color: #897867;
+            }
+            .table-request-form input[type="submit"]:active {
+                background-color: #E1E1E1;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/

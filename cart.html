@@ -193,7 +193,7 @@
             <section class="cart-with-goods">
                 <header>Оформить заказ</header>
 
-                <table>
+                <table class="table-order">
                     <tr>
                         <td></td>
                         <td></td>
@@ -202,39 +202,103 @@
                         <td>Цена</td>
                         <td>Сумма</td>
                     </tr>
-                    <tr>
-                        <td>
+                    <tr class="tr-goods">
+                        <td class="delete-goods">
                             <a href="#"><i class="fa fa-times"></i></a>
                         </td>
-                        <td>
-                            <div>
-                                <img src="images/content/lokum.png" alt="Лукум ежевичный">
-                            </div>
+                        <td class="td-img">
+                            <img src="images/content/lokum.png" alt="Лукум ежевичный" width="221px" height="182px">
                         </td>
-                        <td>
+                        <td class="product-name">
                             <h3>Лукум ежевичный</h3>
                         </td>
-                        <td>
-                            <input type="text" form name="quantity" min="1" value="1" maxlength="5">
+                        <td class="quantity-goods">
+                            <input type="text" form="request-form" name="quantity" min="1" value="1" maxlength="5">
                             <span>кг/шт</span>
                         </td>
                         <td class="price">
                             <span>1100 р</span>
                         </td>
-                        <td class="total">
+                        <td class="sum">
                             <span>1100 р</span>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="tr-total">
                         <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td colspan="2">
+                        <td class="total" colspan="2">
                             <span>Итого: 1100 р</span>
                         </td>
                     </tr>
                 </table>
+
+                <form id="request-form" name="request-form" method="post" autocomplete="on" action="#">
+                    <table class="table-request-form">
+                        <tr>
+                            <th>
+                                <label for="name">ФИО:</label>
+                            </th>
+                            <td>
+                                <input id="name" name="name" type="text" maxlength="50">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="email">Email:</label>
+                            </th>
+                            <td>
+                                <input id="email" name="email" type="email" maxlength="50">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="tel">Телефон:</label>
+                            </th>
+                            <td>
+                                <input id="tel" name="tel" type="tel" maxlength="16">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="delivery">Доставка:</label>
+                            </th>
+                            <td>
+                                <input id="delivery" name="delivery" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="adds-delivery">Адреса доставки:</label>
+                            </th>
+                            <td>
+                                <input id="adds-delivery" name="adds-delivery" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="payment">Оплата:</label>
+                            </th>
+                            <td>
+                                <input id="payment" name="payment" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="comment">Комментарий к заказу:</label>
+                            </th>
+                            <td>
+                                <input id="comment" name="comment" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Отправить заявку">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </section>
         </main><!--end MAIN-CONTENT-->
     </div><!--end WRAP-CONTENT-->
